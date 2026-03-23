@@ -1,8 +1,8 @@
 -- Criando um banco
-CREATE DATABASE ebebac;
+CREATE DATABASE ebac;
 
 -- Conectar ao banco de dados ebac
-\c ebebac;
+\c ebac;
 
 -- Criar o esquema
 CREATE SCHEMA store;
@@ -64,3 +64,4 @@ CREATE TABLE "store".product_stock (
     FOREIGN KEY (product_id) REFERENCES "store".product(product_id) ON DELETE CASCADE,
     FOREIGN KEY (supplier_id) REFERENCES "store".suppliers(supplier_id) ON DELETE SET NULL
 );
+
